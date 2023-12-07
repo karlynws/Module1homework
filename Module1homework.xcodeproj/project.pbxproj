@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002880D82B222AC80023E7D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 002880D72B222AC80023E7D6 /* README.md */; };
 		008CF2182B211F37004C2044 /* Module1homeworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CF2172B211F37004C2044 /* Module1homeworkApp.swift */; };
 		008CF21A2B211F37004C2044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CF2192B211F37004C2044 /* ContentView.swift */; };
 		008CF21C2B211F38004C2044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008CF21B2B211F38004C2044 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002880D72B222AC80023E7D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		008CF2142B211F37004C2044 /* Module1homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module1homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008CF2172B211F37004C2044 /* Module1homeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module1homeworkApp.swift; sourceTree = "<group>"; };
 		008CF2192B211F37004C2044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		008CF20B2B211F37004C2044 = {
 			isa = PBXGroup;
 			children = (
+				002880D72B222AC80023E7D6 /* README.md */,
 				008CF2162B211F37004C2044 /* Module1homework */,
 				008CF2152B211F37004C2044 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002880D82B222AC80023E7D6 /* README.md in Resources */,
 				008CF21F2B211F38004C2044 /* Preview Assets.xcassets in Resources */,
 				008CF21C2B211F38004C2044 /* Assets.xcassets in Resources */,
 			);
