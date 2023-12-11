@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		002880D72B222AC80023E7D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		002880D72B222AC80023E7D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		008CF2142B211F37004C2044 /* Module1homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module1homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008CF2172B211F37004C2044 /* Module1homeworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module1homeworkApp.swift; sourceTree = "<group>"; };
 		008CF2192B211F37004C2044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
