@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var red = 50.0
-    @State private var green = 50.0
-    @State private var blue = 50.0
+    @State private var redSlider = 50.0
+    @State private var greenSlider = 50.0
+    @State private var blueSlider = 50.0
     
-    @State private var setRed = 0.5
-    @State private var setGreen = 0.5
-    @State private var setBlue = 0.5
-    
+    @State private var viewBox: Color = Color(red: 0.5, green: 0.5, blue: 0.5)
     
     
     var body: some View {
@@ -24,40 +21,41 @@ struct ContentView: View {
                 .kerning(0.5)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             RoundedRectangle(cornerRadius: 0)
-                .fill(Color(red: setRed, green: setGreen, blue: setBlue))
+                .fill(viewBox)
                 .scaledToFit()
                 .frame(width: 350, height: 350)
             Text("Red")
             HStack {
-                Slider(value: $red,
+                Slider(value: $redSlider,
                        in: 0...255,
                        step: 1)
-                Text("\(Int(red))")
+                Text("\(Int(redSlider))")
             }
             .padding(.horizontal)
             Text("Green")
             HStack {
                 
-                Slider(value: $green,
+                Slider(value: $greenSlider,
                        in: 0...255,
                        step:1)
-                Text("\(Int(green))")
+                Text("\(Int(greenSlider))")
+                    .padding(.horizontal)
+                Text("Blue")
             }
-            .padding(.horizontal)
-            Text("Blue")
             HStack {
-                Slider(value: $blue,
+                Slider(value: $blueSlider,
                        in: 0...255,
                        step: 1)
-                Text("\(Int(blue))")
+                Text("\(Int(blueSlider))")
             }
             .padding(.horizontal)
             Button("Set Color") {
-                setRed = red/255
-                setGreen = green/255
-                setBlue = blue/255
                 
-                
+                viewBox = Color(
+                    red: redSlider / 255,
+                    green: greenSlider / 255,
+                    blue: blueSlider / 255
+                )
             }
         }
         
