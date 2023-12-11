@@ -7,16 +7,16 @@ a) What does the command ‘git status’ output?
 *'git status'shows whether the working tree is clean and tracked or not, modified, or added to the repository.*
 
 
-b) In SwiftUI, anything that gets drawn on the screen is a ____==view==____. 
+b) In SwiftUI, anything that gets drawn on the screen is a ____*view*____. 
 
 
 
-c) print(“Hello world”) is an example of a _______*function_____ call.
-viewModel.getData() is an example of a _________*method_________ call.
+c) print(“Hello world”) is an example of a _______*function*_____ call.
+viewModel.getData() is an example of a _________*method*_________ call.
 
 
 d) Name some Views you have seen so far in SwiftUI.
-==We have seen text views, button, slider.== 
+*We have seen text views, button, slider.*
 
 e) How do you create a new local repository using git? (Feel free to answer with how you use git, i.e. terminal or another app) 
 *git init

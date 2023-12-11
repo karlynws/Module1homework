@@ -11,12 +11,12 @@ struct ContentView: View {
     @State private var red = 50.0
     @State private var green = 50.0
     @State private var blue = 50.0
-
+    
     @State private var setRed = 0.5
     @State private var setGreen = 0.5
     @State private var setBlue = 0.5
     
-
+    
     
     var body: some View {
         VStack {
@@ -53,17 +53,18 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             Button("Set Color") {
-               
-                //values of the sliders will be used to set the color of the roundedrectangle
-                // if setColor is true(pressed) then color is (red slider value divided by 255, green color slider value divided by 255, blue color slider value divided by 255)
+                setRed = red/255
+                setGreen = green/255
+                setBlue = blue/255
+                
+                
             }
         }
-       
+        
     }
 }
 
 #Preview {
     ContentView()
 }
-//let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
-//Note that those values are percentages between 0 and 1. To calculate the percentage, divide the slider value by 255.
+
