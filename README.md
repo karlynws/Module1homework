@@ -26,7 +26,7 @@ f) How do you preview your app in multiple orientations?
 *In your x code preview there is an option on the bottom to toggle to landscape orientations*
 
 
-g) An app is made up of ________________ of classes and structs that contain ______________  and _________________. (Protocol? SwuitUI Framework? Views? And data??? IDK) body??
+g) An app is made up of _______instances_________ of classes and structs that contain _____data_________  and _____functionality____________. (Protocol? SwuitUI Framework? Views? And data??? IDK) body??
 
 h) Name two components of a SwiftUI Button.
 *A SwiftUI Button has a label, and the action it will preform when pressed.* 
@@ -68,7 +68,7 @@ print(“Hello, \(name)!”)
 
 
 r) What commands can you use in git to download data from a remote repository? What commands can you use in git to send data to a remote repository? (Feel free to answer with how you use git, i.e. terminal or another app) 
-*git pull, git refresh*
+*git pull, git fetch
 
 
 s) Why is a programming To-Do list important, and what is a minimum viable product? 
@@ -80,7 +80,7 @@ t) What is a simple way of describing Binding in SwiftUI?
 
 
 u) What command do you use in git to move changes from one branch to another? (Feel free to answer with how you use git, i.e. terminal or another app)
-*git switch or git checkout
+*git switch or git checkout then git merch <branch name> to move changes from a to b
 
 
 v) What is the type of the variable defined below?
@@ -92,11 +92,11 @@ w) What is the difference between var and let?
 
 Part 3 - Above and Beyond
 
-In ContentView, lines 1 and 2 show the definition of *State__ Property__.
+In ContentView, lines 1 and 2 show the definition of *Stored__ Property__.
 In ContentView, line 3 shows the definition of a      *private__  Property__.
 In ContentView, line 4 shows the definition of a     computed__ Property_.
-In ContentView, line 5 shows an   instance__ of Game calling the game__ points.
+In ContentView, line 5 shows an   instance__ of Game calling the method__ points.
 In ContentView, line 6 is the definition of the Method__  doSomethingWithCounter().
-In Game, lines a, b, and c show the definition of   simple__ data__.
-In Game, line d is the definition of the   game__ points(sliderValue: Int).
+In Game, lines a, b, and c show the definition of   stored property__.
+In Game, line d is the definition of the   method__ points(sliderValue: Int).
 Lines 3, a, b, and c are the   Struct__ Properties__ and lines 6 and d are the   methods__ of the structs.

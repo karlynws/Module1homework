@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var redSlider = 50.0
-    @State private var greenSlider = 50.0
-    @State private var blueSlider = 50.0
+    @State private var redSlider = 127.0
+    @State private var greenSlider = 127.0
+    @State private var blueSlider = 127.0
     
     @State private var viewBox: Color = Color(red: 0.5, green: 0.5, blue: 0.5)
     
@@ -26,9 +26,11 @@ struct ContentView: View {
                 .frame(width: 350, height: 350)
             Text("Red")
             HStack {
-                Slider(value: $redSlider,
-                       in: 0...255,
-                       step: 1)
+                Slider(
+                    value: $redSlider,
+                    in: 0...255,
+                    step: 1
+                )
                 Text("\(Int(redSlider))")
             }
             .padding(.horizontal)
@@ -39,9 +41,10 @@ struct ContentView: View {
                        in: 0...255,
                        step:1)
                 Text("\(Int(greenSlider))")
+            }
                     .padding(.horizontal)
                 Text("Blue")
-            }
+            
             HStack {
                 Slider(value: $blueSlider,
                        in: 0...255,
