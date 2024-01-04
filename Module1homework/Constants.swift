@@ -10,6 +10,6 @@ import Foundation
 enum Constants {
   enum General {
     public static let twoFiftyFive = 255.0
-    //value percentage connversion
+    //value percentage conversion
   }
 }
