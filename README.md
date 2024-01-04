@@ -66,7 +66,9 @@ q) Describe the two transitions you were introduced to in this week’s lesson.
 
 -We were exposed to withAnimation  and .animation  (.easeInOut…) and .transition(.scale) as well as .slide, and .opacity.
 
-r) In Bullseye, the Game struct is what type of object? is struct an object? Is Game observable? In content mode we use @State for the Game... I am having a hard time with this question. 
+r) In Bullseye, the Game struct is what type of object? 
+
+-The Game struct is the swift file that the app references for the game play such as keeping the score, tracks the rounds, and calculates the leaderboard. 
 
 s) What are SFSymbols? 
 
