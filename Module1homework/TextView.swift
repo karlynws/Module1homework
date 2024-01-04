@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct TextView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct TitleText: View {
+  var text: String
+  var body: some View {
+    VStack {
+      Text(text)
+        .kerning(0.5)
+        .font(.title)
+        .bold()
     }
+  }
+}
+
+struct SliderLabel: View {
+  var text: String
+  var body: some View {
+    Text(text)
+  }
 }
 
 #Preview {
-    TextView()
+  VStack {
+    TitleText(text:"Title")
+    
+    SliderLabel(text: "color")
+  }
 }
