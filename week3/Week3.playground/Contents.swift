@@ -5,6 +5,7 @@ for i in nums where i.isMultiple(of: 2){
   print(i)
 }
 
+//instructor feedback: You completed it right. However, the assignment asked you to created the nums array with values 0 through 20. You should make it Array(0...20) not Array(1...20). This will add 0 also to the output of this printing.
 /*b ) In your Playground, define the following String:
  let sentence = “The qUIck bRown fOx jumpEd over the lAzy doG”
  Iterate over sentence counting the vowels (a, e, i, o, u), ignoring the case. */
@@ -35,7 +36,7 @@ for i in firstArray {
   }
   print()
 }
-
+//instructor feedback: The same is true here as in task a. You need to add the 0 value at the beginning of your array. Sometimes just small change or one value in real application would make a great impact.
 /* d) Write a function called average that takes an optional array of Int. If the array is not nil, calculate the average of the array's values and print:
  “The average of the values in the array is <average>.”
  Where <average> is the calculated average. If the array is nil, print:
@@ -58,7 +59,7 @@ func average(_ values: [Int]?) {
 average(nums)
 average(nil)
 
-
+//instructor feedback: You did it right. But you missed only one condition. If you give this array an empty array "[Int]()" or "[ ]", it will crash because it divide the number by zero ( array count is zero). Because you need to add a condition with this condition "if let values = values" that the array shouldn't be empty. Ex. "!values.isEmpty"
 
 /*e ) Create a struct called Person with the properties firstName, lastName, and age. Choose appropriate data types for the properties. Include a method on Person called details that prints the values stored in the properties in the following format:
  Name: <firstName> <lastName>, Age: <age>
@@ -106,6 +107,7 @@ let student = Student(person: Person(firstName: "Karlyn", lastName: "Sanders", a
 
 student.details()
 
+//instructor feedback: You can handle the same condition as task D in the calculateAverageGrade method while calculating the average.
 
 //ABOVE AND BEYOND
 
